@@ -1,0 +1,7 @@
+GRANT USAGE ON DATABASE smoothies TO ROLE PUBLIC;
+GRANT USAGE ON SCHEMA smoothies.public TO ROLE PUBLIC;
+GRANT CREATE STREAMLIT ON SCHEMA smoothies.public TO ROLE PUBLIC;
+GRANT CREATE STAGE ON SCHEMA smoothies.public TO ROLE PUBLIC;
+
+-- Don't forget to grant USAGE on a warehouse (if you can).
+GRANT USAGE ON WAREHOUSE compute_wh TO ROLE PUBLIC;
